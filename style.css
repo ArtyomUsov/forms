@@ -1,0 +1,79 @@
+
+body {
+    margin: 0;
+    background-color: rgb(35, 35, 35);
+    display: flex;
+    flex-wrap: nowrap;
+}
+* {box-sizing: border-box;}
+.columnOne {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    width: 50%;
+}
+.columnTwo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.textarea, .input, .button, .form-select {
+    border: 3px solid rgb(0, 0, 0) ;
+    background-color: rgb(24, 24, 24);
+    margin-top: 0px;
+    color: white;
+}
+.textarea {
+    width: 250px;
+}
+.input {
+    width: 250px;
+}
+.text {
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+.textRadio {
+    margin-top: 80px;
+}
+.yellow {
+    color: yellow;
+}
+h1 {
+    color: white;
+}
+.button {
+    font-weight: bold;
+    margin-top: 25px;
+    cursor: pointer;
+    background-color: yellow;
+    height: 30px;
+    width: 250px;
+    font-size: 15px;
+    color: black;
+}
+.button:hover {
+    background-color: rgb(50, 50, 50);
+    /* color: white;
+    border: 3px solid white; */
+}
+.checkbox {
+    padding-top: 25px;
+}
+.addFile, .list {
+    display: flex;
+    flex-direction: column;
+}
+.inputFile {
+    color: white;
+}
+.main-form_error {
+    color: red;
+    padding-left: 5px;
+    padding-top: 5px;
+}
