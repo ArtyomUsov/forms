@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript и формы</title>
+</head>
+<body>
+    <form class="columnOne" name="main">
+        <h1><span class="yellow">JavaScript</span> и формы</h1>
+        <span class="text">Поле ввода</span>
+        <input
+            name="nameInput" 
+            class="input" 
+            value="Привет" 
+            type="text" 
+            placeholder="Писать здесь...">
+        <span class="text">Текстовое поле ввода</span>
+        <textarea
+            class="textarea" 
+            value="" 
+            name="nameTextarea" 
+            id="" 
+            cols="30" 
+            rows="10" 
+            autofocus
+            placeholder="Писать здесь...">Эчпочмак</textarea>
+        <button class="button">Кнопка отправки формы</button>
+    </form>
+    <form class="columnTwo" name="mainTwo">
+        <span class="text textRadio">Радиокнопки</span>
+        <div class="radioButtons">
+            <div class="radioButton">
+                <input 
+                    type="radio" 
+                    name="radioButtonsOne" 
+                    id="radioButton1"
+                    checked>
+                    <span class="text">Кнопка №1</span>
+            </div>
+            <div class="radioButton">
+                <input 
+                    type="radio" 
+                    name="radioButtonsOne" 
+                    id="radioButton2">
+                    <span class="text">Кнопка №2</span>
+            </div>
+            <div class="radioButton checkbox">
+                <input 
+                    type="checkbox" 
+                    name="nameCheck" 
+                    id="">
+                    <span class="text">Чекбокс</span>
+            </div>
+        </div>
+        <div class="addFile">
+            <span class="text">Прикрепить файл</span>
+            <input
+                class="inputFile" 
+                name="nameFile" 
+                type="file">
+        </div>
+        <div class="list">
+            <span class="text">Список</span>
+            <select 
+                class="form-select" 
+                name="nameSelect"
+                aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option selected value="3">Three</option>
+            </select>
+        </div>
+    </form>
+    <script src="forms.js"></script>
+</body>
+</html>
